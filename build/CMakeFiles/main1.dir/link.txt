@@ -1,0 +1,1 @@
+g++ -g -Wl,--dependency-file=CMakeFiles/main1.dir/link.d CMakeFiles/main1.dir/src/coin.cpp.o CMakeFiles/main1.dir/src/main.cpp.o CMakeFiles/main1.dir/src/player.cpp.o -o main1  thirdparty/raylib/raylib/libraylib.a -lm -lpthread /usr/lib/libOpenGL.so /usr/lib/libGLX.so /usr/lib/libGLU.so /usr/lib/librt.a -lm -ldl

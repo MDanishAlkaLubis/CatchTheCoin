@@ -1,0 +1,46 @@
+Assalamu'alaikum warahmatullahi wabarakatuh.
+Saya M. Danish Alka Lubis, siswa dari SMPS Muhammadiyah 01 Medan. Dalam video ini, saya akan menampilkan bakat saya
+di bidang coding, khususnya dalam pengembangan gim sederhana menggunakan bahasa pemrograman C++ dan framework Raylib.
+
+Selain menampilkan proses berpikir logis dalam pengembangan perangkat lunak, saya juga akan memperlihatkan efisiensi
+kerja saya dengan text editor Neovim dan navigasi cepat menggunakan Vim motions.
+
+Mari kita mulai proses pembuatannya.
+
+Tentu dalam memainkan sebuah game, kita akan membutuhkan sebuah window untuk melihat konten game tersebut. Raylib
+memudahkan proses tersebut. (buat window kosong)
+
+Agar code-base kita lebih jelas, kita akan membagi game state menjadi dua, yaitu Main Menu dan Gameplay (Gamestate struct
+dan switch game state)
+
+Dengan RayGUI, kita dapat dengan mudah menambahkan elemen GUI seperti tombol. ( tombol start & exit, bg_mainmenu texture drawing thingy)
+
+Selanjutnya, kita akan membuat blueprint untuk objek Player kita. C++ adalah bahsa pemrograman yang menggunakan
+Object Oriented Patern yang berarti semua yang akan kita buat adalah instansi sebuah Class. C++ menggunakan sistem dua
+file untuk membuat class, file header dan file source. di file header ini kita akan mendeklarasikan fungsi" dan variabel"
+seperti area kolisi, texture, dan beberapa variabel debugging. fungsi" seperti draw texture dan draw ui, update, dan
+fungsi" debugging.( player class header file )
+
+berikutnya, kita akan mendefinisikan fungsi fungsi di class player seperti berikut.( player cpp source )
+
+Selanjutnya, untuk membuat koin" jatuh dari langit, kita akan mendeklarasikan struct untuk Coin. Kenapa tidak menggunakan
+class? karna Coin adalah objek yang relatif lebih simpel dan tidak memiliki function apapun. Coin ini akan memiliki beberapa
+jenis. Antaranya: Normal, Bad (mines satu poin), Good (plus dua poin). Kita dapat mendeklarasikannya dengan menggunakan enum
+class. Nantinya, kita akan menggunakan jenis" yang berbeda ini untuk menampilkan koin dengan warna" yang berbeda. Agar
+mudah mengklasifikasikannya, kita akan menggunakan hashmap agar tetap memory efficient.
+
+Tentu kita tidak mau koin" yang muncul jatuh dari tempat yang sama, maka dari itu, kita akan membuat function AddCoin
+menggunakan function RNG atau random number generator yang telah disediakan Raylib. kita akan menggunakan function RNG
+ini untuk mendapatkan lokasi X dan jenis koin yang berbeda. Perlu di perhatikan, kita tetap menggunakan RNG untuk menghasilkan
+nomor acak untuk meraih jenis koinnya. Untuk mengkonversikan nomor ke jenis koin, kita dapat menggunakan switch statement
+sebagai berikut. ( coin.hpp dan coin.cpp )
+
+Kurang lebih itu saja untuk code yang diluat main.cpp. Dengan class, struct, enum class, hashmaps ini sebagai building
+block, kita dapat dengan mudah membuat gamenya.
+
+Untuk menyelesaikan game ini, kita perlu mendeklarasikan beberapa komponen terlebih dahulu, seperti texture coin, instansi
+player, vector yang berisi Coin dan agar code nya lebih muda dibaca, kita akan membuat coin loopnya function sendiri.
+
+untuk main game loopnya kita cuman butuh melakukan ini blah blah blah.( udah tau mau bilang apa )
+
+last, kita akan menghias elemen" GUI dengan setguistyle yang disediakan RayGUI.
