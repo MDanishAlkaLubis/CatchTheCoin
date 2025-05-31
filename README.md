@@ -20,11 +20,11 @@ game atau aplikasi, namun skill programming ini juga dibutuhkan dalam mengatur o
 
 # Di video gaterlalu jelas footage codingnya/ngeblur/kekecilan textnya !!
 
-Bagi teman-teman yang ingin menyaksikan saya membuat game ini tanpa ada di edit, video nya ada di ./coding_footage.mp4
+Bagi teman-teman yang ingin menyaksikan saya membuat game ini tanpa ada di edit, video nya ada di google drive saya.
 
 # NOTE !!!
 
-Semua Code dan Game Design di rancang dan dibubat oleh Saya (M. Danish Alka Lubis) dan saya rilis dibawah Lisensi GPL 3.
+Semua Code dan Game Design di rancang dan dibubat oleh Saya (M. Danish Alka Lubis) dan saya rilis dibawah Lisensi GPL 3.0.
 
 Saya tidak mengklaim aset-aset game seperti gambar-gambbar yang mungkin diperoleh dari internet. Saya mendukung kreator
 asli dari aset-aset game saya. 
@@ -35,8 +35,10 @@ REPO GAME: https://github.com/MDanishAlkaLubis/CatchTheCoin/
 
 REPO RICE LINUX: https://github.com/kroussekax/config 
 
+CODING FOOTAGE: https://drive.google.com/file/d/14dF9okyAfcj1OU9Q5iiKjIG9WBd4h8vI/view?usp=drive_link
+
 Saya punya tiga akun github yang ada projek-projek saya dari 2 tahun lalu sampai sekarang
 
 Akun 1: https://github.com/TheDaev/
 Akun 2: https://github.com/kroussekax/
-Akun 2: https://github.com/dave-eska/ 
+Akun 3: https://github.com/dave-eska/
